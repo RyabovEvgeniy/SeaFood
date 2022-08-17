@@ -1,0 +1,28 @@
+// Основные настройки страницы
+body {
+	font-family: "Roboto", sans-serif;
+	// font-family: "Roboto Slab", serif;
+	background: #fff;
+	color: #232222;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+.none {
+	display: none !important;
+}
+
+[class*="__container"] {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
