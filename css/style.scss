@@ -207,3 +207,130 @@ body {
 	padding: 50px 0px 0px 112px;
 	margin: 0px 0px 50px 0px;
 }
+
+// Product
+
+.product {
+	padding: 100px 0px 0px 0px;
+
+	// .product__container
+
+	&__container {
+	}
+
+	// .product__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	// .product__name
+
+	&__name {
+		width: 510px;
+		text-align: center;
+		// background-color: burlywood;
+		// padding: 41px 0px 0px 0px;
+	}
+
+	// .product__name-item
+
+	&__name-item {
+		font-family: "Roboto Slab", serif;
+		font-size: 24px;
+		line-height: 1.33;
+		cursor: pointer;
+		&:not(:last-child) {
+			margin: 30px 0px 0px 0px;
+		}
+		&.slick-current {
+			font-weight: 700;
+			font-size: 36px;
+			// line-height: 1.3;
+			color: #001e64;
+		}
+	}
+
+	&-next,
+	&-prev {
+		cursor: pointer;
+	}
+
+	// .product__content
+
+	&__content {
+		font-family: "Roboto Slab", serif;
+		width: 600px;
+		// background-color: red;
+	}
+
+	// .product__content-item
+
+	&__content-item {
+		font-family: "Roboto", sans-serif;
+		&:not(:last-child) {
+			margin: 0px 0px 30px 0px;
+		}
+		span {
+			display: block;
+			margin: 0px 0px 10px 0px;
+			font-size: 18px;
+			line-height: 1.33;
+			color: #001e64;
+		}
+	}
+
+	//.product__content__box
+
+	&__content__box {
+		display: flex;
+		// align-items: flex-start;
+		column-gap: 48px;
+	}
+
+	// .product__content-img
+
+	&__content-img {
+		// object-fit: cover;
+	}
+
+	// .product__content-list
+
+	&__content-list {
+		width: 291px;
+	}
+
+	// .product__content-title
+
+	&__content-title {
+		font-size: 24px;
+		line-height: 1.33;
+		color: #001e64;
+		margin: 0px 0px 20px 0px;
+		padding: 10px 0px 0px 0px;
+	}
+
+	// .product__content-text
+
+	&__content-text {
+		font-family: "Roboto", sans-serif;
+		margin: 0px 0px 27px 0px;
+	}
+
+	// .product__content-btn
+
+	&__content-btn {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.33;
+		text-transform: uppercase;
+		cursor: pointer;
+		color: #001e64 !important;
+		padding: 12px 85px;
+		background-color: transparent;
+		border: 1px solid #001e64;
+		border-radius: 20px;
+	}
+}

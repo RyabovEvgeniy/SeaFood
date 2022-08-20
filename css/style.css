@@ -187,3 +187,104 @@ body {
   padding: 50px 0px 0px 112px;
   margin: 0px 0px 50px 0px;
 }
+
+.product {
+  padding: 100px 0px 0px 0px;
+}
+
+.product__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.product__name {
+  width: 510px;
+  text-align: center;
+}
+
+.product__name-item {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  line-height: 1.33;
+  cursor: pointer;
+}
+
+.product__name-item:not(:last-child) {
+  margin: 30px 0px 0px 0px;
+}
+
+.product__name-item.slick-current {
+  font-weight: 700;
+  font-size: 36px;
+  color: #001e64;
+}
+
+.product-next, .product-prev {
+  cursor: pointer;
+}
+
+.product__content {
+  font-family: "Roboto Slab", serif;
+  width: 600px;
+}
+
+.product__content-item {
+  font-family: "Roboto", sans-serif;
+}
+
+.product__content-item:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+
+.product__content-item span {
+  display: block;
+  margin: 0px 0px 10px 0px;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #001e64;
+}
+
+.product__content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 48px;
+          column-gap: 48px;
+}
+
+.product__content-list {
+  width: 291px;
+}
+
+.product__content-title {
+  font-size: 24px;
+  line-height: 1.33;
+  color: #001e64;
+  margin: 0px 0px 20px 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.product__content-text {
+  font-family: "Roboto", sans-serif;
+  margin: 0px 0px 27px 0px;
+}
+
+.product__content-btn {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #001e64 !important;
+  padding: 12px 85px;
+  background-color: transparent;
+  border: 1px solid #001e64;
+  border-radius: 20px;
+}
