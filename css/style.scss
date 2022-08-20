@@ -29,6 +29,11 @@ body {
 
 // Header
 .header {
+	min-height: 100vh;
+	background-image: url(./../img/header-bg.png);
+	background-repeat: no-repeat;
+	background-position: center 40px;
+
 	// .header__container
 
 	&__container {
@@ -39,9 +44,112 @@ body {
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		padding: 27px 43px 0px 16px;
+		padding: 15px 43px 0px 16px;
+	}
+
+	// .header__content
+
+	&__content {
+	}
+
+	// .header__content-btn
+
+	&__content-btn {
+		display: inline-block;
+		font-family: "Roboto Slab", serif;
+		background: rgba(255, 255, 255, 0.5);
+		color: #fff;
+		border-radius: 20px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.33;
+		padding: 14px 88px;
+		margin: 0px 0px 0px 112px;
+		transform: translateY(-130px);
+	}
+
+	// .header__content-box
+
+	&__content-box {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0px 30px 0px 0px;
+		font-size: 18px;
+		line-height: 1.16;
+		color: #ffffff;
+		transform: translateY(-50px);
+	}
+
+	// .header__content-link
+
+	&__content-link {
+		&--activ {
+			font-weight: 700;
+		}
 	}
 }
+
+.header-slider {
+	max-width: 522px;
+	padding: 57px 0px 135px 112px;
+	// .header-slider__item
+
+	&__item {
+	}
+
+	// .header-slider__text
+
+	&__text {
+		font-size: 18px;
+		line-height: 1.2;
+		color: #ffffff;
+		margin: 0px 0px 25px 0px;
+	}
+}
+
+.slick-prev,
+.slick-next {
+	background-color: transparent;
+	cursor: pointer;
+	position: absolute;
+	left: 40px;
+}
+.slick-prev {
+	top: 0;
+}
+.slick-next {
+	bottom: 0;
+}
+.slick-dots {
+	position: absolute;
+	left: 35px;
+	top: 58px;
+	bottom: 55px;
+	li {
+		&:not(:last-child) {
+			margin: 0px 0px 40px 0px;
+		}
+		&:nth-child(n + 10) button::before {
+			content: "";
+		}
+	}
+	button {
+		cursor: pointer;
+		background-color: transparent;
+		font-size: 24px;
+		line-height: 1.16;
+		color: rgba(255, 255, 255, 0.5);
+		&::before {
+			content: "0";
+		}
+	}
+}
+.slick-active {
+	button {
+		color: rgb(255, 255, 255);
+	}
+}
+
 .logo {
 	// .logo__img
 
@@ -66,9 +174,9 @@ body {
 			margin: 0px 30px 0px 0px;
 		}
 	}
-	
+
 	// .menu__link
-	
+
 	&__link {
 		font-weight: 500;
 		font-size: 18px;
@@ -76,8 +184,8 @@ body {
 		color: #001e64;
 		text-transform: uppercase;
 		&:hover {
-			border-bottom: 1px solid #001E64;
-		}		
+			border-bottom: 1px solid #001e64;
+		}
 	}
 }
 .phone {
@@ -87,4 +195,15 @@ body {
 
 	&__img {
 	}
+}
+
+.title {
+	font-family: "Roboto Slab", serif;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 1.31;
+	color: #001e64;
+	max-width: 589px;
+	padding: 50px 0px 0px 112px;
+	margin: 0px 0px 50px 0px;
 }
