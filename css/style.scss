@@ -334,3 +334,39 @@ body {
 		border-radius: 20px;
 	}
 }
+
+// Benefits
+
+.benefits {
+	background: url("../img/benefits-bg.png") top center / cover no-repeat;
+	padding: 290px 0px 95px 0px;
+
+	// .benefits__container
+
+	&__container {
+	}
+
+	// .benefits__items
+
+	&__items {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	// .benefits__item
+
+	&__item {
+		background: url('../img/benefits-item-bg.svg') center / cover no-repeat;
+		font-family: "Roboto Slab", serif;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.33;
+		color: #fff;
+		width: 180px;
+		min-height: 165px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
