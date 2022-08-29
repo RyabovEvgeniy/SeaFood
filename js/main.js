@@ -1,10 +1,21 @@
-$(document).ready(function(){
-  $('.header-slider').slick({
-    vertical: true,
+$(document).ready(function () {
+	$('.header-slider').slick({
+		vertical: true,
 		dots: true,
 		prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg" alt=""></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg" alt=""></button>'
-  });
+		nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg" alt=""></button>',
+		responsive: [
+			{
+				breakpoint: 361,
+				settings: {
+					dots: false,
+					arrows: false,
+					autoplay: true,
+					autoplaySpeed: 2000,
+				}
+			}
+		]
+	});
 
 	$('.product__name').slick({
 		slidesToShow: 4,
@@ -22,6 +33,9 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		asNavFor: '.product__name',
 		fade: true,
-		arrows: false,		
+		arrows: false,
+	});
+	$('.menu__btn').on('click', function () {
+		$('.menu__list').toggleClass('menu__list--active');
 	});
 });

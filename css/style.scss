@@ -164,11 +164,44 @@ body {
 .menu {
 	margin: 16px 0px 0px 0px;
 
+	// .menu__btn
+
+	&__btn {
+		width: 40px;
+		padding: 13px 0px;
+		background-color: transparent;
+		cursor: pointer;
+		position: relative;
+		display: none;
+		&::before {
+			content: '';
+			position: absolute;
+			height: 4px;
+			left: 0;
+			right: 0;
+			top: 0;
+			background-color: #001e64;
+		}		
+		&::after {
+			content: '';
+			position: absolute;
+			height: 4px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #001e64;
+		}
+		span {
+			display: block;
+			height: 4px;
+			background-color: #001e64;
+		}
+	}
+
 	// .menu__list
 
 	&__list {
 		display: flex;
-		// justify-content: space-between;
 	}
 
 	// .menu__item
