@@ -66,6 +66,14 @@ body {
   -webkit-transform: translateY(-130px);
       -ms-transform: translateY(-130px);
           transform: translateY(-130px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__content-btn:hover {
+  color: #001e64;
+  background-color: #fff;
 }
 
 .header__content-box {
@@ -287,6 +295,14 @@ body {
   background-color: transparent;
   border: 1px solid #001e64;
   border-radius: 20px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.product__content-btn:hover {
+  background-color: #001e64;
+  color: #fff !important;
 }
 
 .benefits {
@@ -456,11 +472,11 @@ body {
 }
 
 .footer-social__link path {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .footer-social__link:hover path {
-  fill: #001E64;
+  fill: #001e64;
 }
