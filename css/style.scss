@@ -66,14 +66,10 @@ body {
 		padding: 14px 88px;
 		margin: 0px 0px 0px 112px;
 		transform: translateY(-130px);
-		// border: 1px solid transparent;
-		// border-radius: 20px;
 		transition: all 0.3s;
 		&:hover {
 			color: #001e64;
 			background-color: #fff;
-			// border: 1px solid #001e64;
-			// border-radius: 20px;
 		}
 	}
 
@@ -240,8 +236,6 @@ body {
 	&__name {
 		width: 510px;
 		text-align: center;
-		// background-color: burlywood;
-		// padding: 41px 0px 0px 0px;
 	}
 
 	// .product__name-item
@@ -257,7 +251,6 @@ body {
 		&.slick-current {
 			font-weight: 700;
 			font-size: 36px;
-			// line-height: 1.3;
 			color: #001e64;
 		}
 	}
@@ -272,7 +265,6 @@ body {
 	&__content {
 		font-family: "Roboto Slab", serif;
 		width: 600px;
-		// background-color: red;
 	}
 
 	// .product__content-item
@@ -295,7 +287,6 @@ body {
 
 	&__content__box {
 		display: flex;
-		// align-items: flex-start;
 		column-gap: 48px;
 	}
 
