@@ -511,3 +511,58 @@ body {
 		}
 	}
 }
+
+// Footer
+
+.footer {
+	padding: 30px 0px 110px 0px;
+
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 0px 45px 0px 23px;
+		.menu {
+			padding: 0px 0px 30px 0px;
+		}
+	}
+}
+.footer-social {
+
+
+	// .footer-social__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+		padding: 0px 0px 19px 0px;
+		// justify-content: space-between;
+	}
+
+	// .footer-social__item
+
+	&__item {
+	}
+
+	// .footer-social__link
+
+	&__link {
+		path {
+			transition: all .3s;
+		}
+		&:hover path {
+			fill: #001E64; 
+		}
+	}
+}
+
+
+
