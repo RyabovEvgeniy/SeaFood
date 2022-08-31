@@ -26,7 +26,29 @@ $(document).ready(function () {
 		asNavFor: '.product__content',
 		vertical: true,
 		prevArrow: '<button type="button" class="product-prev"><img src="img/product-prev.svg" alt=""></button>',
-		nextArrow: '<button type="button" class="product-next"><img src="img/product-next.svg" alt=""></button>'
+		nextArrow: '<button type="button" class="product-next"><img src="img/product-next.svg" alt=""></button>',
+		responsive: [
+			{
+				breakpoint: 891,
+				settings: {
+					vertical: false,
+					slidesToShow: 3,
+					arrows: false,
+					dots: true,
+					centerPadding: '25px'
+				}
+			},
+			{
+				breakpoint: 521,
+				settings: {
+					vertical: false,
+					slidesToShow: 1,
+					arrows: false,
+					dots: true,
+					centerPadding: '25px'
+				}
+			}
+		]
 	});
 	$('.product__content').slick({
 		slidesToShow: 1,
