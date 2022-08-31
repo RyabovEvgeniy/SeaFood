@@ -80,6 +80,19 @@
   .product__content {
     margin: 0 auto;
   }
+  .benefits {
+    padding: 220px 0px 40px 0px;
+  }
+  .benefits__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-column-gap: 160px;
+            column-gap: 160px;
+    row-gap: 50px;
+  }
 }
 
 @media (max-width: 745px) {
@@ -107,6 +120,12 @@
   }
   .product__content-list {
     width: 100%;
+  }
+}
+
+@media (max-width: 556px) {
+  .benefits {
+    display: none;
   }
 }
 
