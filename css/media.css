@@ -27,6 +27,21 @@
         -ms-flex-order: -1;
             order: -1;
   }
+  .footer {
+    padding: 40px 0px 40px 0px;
+  }
+  .footer .logo,
+  .footer .menu {
+    display: none;
+  }
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-social__list {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1000px) {

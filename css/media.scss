@@ -26,6 +26,19 @@
 			order: -1;
 		}
 	}
+	.footer {
+		padding: 40px 0px 40px 0px;
+	}
+	.footer .logo,
+	.footer .menu {
+		display: none;
+	}
+	.footer__inner {
+		justify-content: center;
+	}
+	.footer-social__list {
+		padding: 0;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -134,7 +147,6 @@
 		background: none;
 	}
 	.contacts__box {
-		// margin: 0px;
 		width: 100%;
 		padding: 33px 0px 33px 0px;
 	}
