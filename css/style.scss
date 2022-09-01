@@ -207,7 +207,6 @@ body {
 	// .menu__item
 
 	&__item {
-		// transition: all 10s ease;
 		&:not(:last-child) {
 			margin: 0px 30px 0px 0px;
 		}
@@ -326,7 +325,6 @@ body {
 	// .product__content-img
 
 	&__content-img {
-		// object-fit: cover;
 	}
 
 	// .product__content-list
@@ -424,7 +422,6 @@ body {
 	&__items {
 		display: flex;
 		flex-direction: column;
-		// align-items: center;
 		row-gap: 50px;
 		margin: 0px 0px 100px 0px;
 	}
@@ -580,7 +577,6 @@ body {
 		align-items: center;
 		column-gap: 10px;
 		padding: 0px 0px 19px 0px;
-		// justify-content: space-between;
 	}
 
 	// .footer-social__item
